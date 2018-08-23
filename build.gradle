@@ -1,0 +1,61 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// Define versions in a single place
+ext {
+    // Sdk and tools
+    // Support library and architecture components support minSdk 14 and above.
+    minSdkVersion = 15
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+
+    // App dependencies
+    supportLibraryVersion = '27.1.1'
+    constraintLayout = '1.1.2'
+    guavaVersion = '18.0'
+    junitVersion = '4.12'
+    mockitoVersion = '1.10.19'
+    powerMockito = '1.6.2'
+    hamcrestVersion = '1.3'
+    runnerVersion = '1.0.1'
+    rulesVersion = '1.0.1'
+    espressoVersion = '3.0.2'
+    daggerVersion = '2.11'
+    dexmakerVersion = '1.2'
+    rxAndroidVersion = '2.0.1'
+    rxJavaVersion = '2.1.7'
+    retrofitClientVersion = '2.3.0'
+    retrofitAdapterRxJavaVersion = '2.3.0'
+    gsonVersion = '2.8.2'
+    gsonConverterVersion = '2.3.0'
+    supportCardviewVersion = '27.1.1'
+    playServicesVersion = '15.0.1'
+    multidexVersion = '1.0.3'
+    roboElectricVersion = '3.8'
+}
